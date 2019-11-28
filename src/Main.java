@@ -5,15 +5,12 @@ public class Main {
         LinkedList<TestNode> nodes = new LinkedList<TestNode>();
 
         nodes.addNodeAtStartOfList(node);
-        node.testString = "First changed";
-        node.testInt = 1;
+        TestNode node2 = new TestNode(1, "First changed");
+        nodes.addNodeAtEndOfList(node2);
 
-        nodes.addNodeAtEndOfList(node);
+        TestNode node3 = new TestNode(0, "Back to first");
 
-        node.testString = "Back to first";
-        node.testInt = 0;
-
-        nodes.addNodeAtStartOfList(node);
+        nodes.addNodeAtStartOfList(node3);
 
         TestNode nodeAtIndex = new TestNode(10, "I'm a node and I want to be at a specific index");
 

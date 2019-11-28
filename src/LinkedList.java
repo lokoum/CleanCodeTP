@@ -34,11 +34,11 @@ public class LinkedList<T> {
         increaseNumberOfElements();
     }
 
-    public void increaseNumberOfElements() {
+    private void increaseNumberOfElements() {
         numberOfElements++;
     }
 
-    public void decreaseNumberOfElements() {
+    private void decreaseNumberOfElements() {
         numberOfElements--;
     }
 
